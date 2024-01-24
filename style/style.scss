@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&family=Shrikhand&display=swap');
+
+body {
+    margin: 0;
+}
+
+.maincontainer {
+    width: 100%;
+}
+
+.maincontainer img {
+    width: 100%;
+}
+
+.maincontainer h1, .maincontainer p, .maincontainer h2 {
+    font-family: 'Roboto', sans-serif;
+} 
+
+header {
+    font-family: 'Shrikhand', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+header .cit {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 14px;
+
+    img {
+        width: 200px;
+    }
+
+    p {
+        text-align: center;
+        background-color: #EAEAEA;
+        width: 100%;
+        padding: 15px 0;
+    }
+}
+
+.titles {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+    }
+}
+
+.btnres {
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+    font-weight: bold;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    margin: auto;
+}
+.compo{
+    font-family:'Roboto', sans-serif;
+    list-style-type: none;
+    li {
+        position: relative;
+        border-radius: 20px;
+        background: #F6F6F6;
+        height: 73px;
+        width: 90%;
+        margin: auto;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        span{
+            border-radius: 100%;
+            background-color: #9356DC;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #F6F6F6;
+            left: 0;
+            top: 50%;
+            transform: translate(-50% , -50%);
+            position: absolute;
+        }
+
+    }
+}
+.Card { 
+    background-color: #F6F6F6;
+    img {
+        border-radius: 15px;
+        height: 251px;
+        object-fit: cover;
+        text-align: center;
+    }
+}
+
