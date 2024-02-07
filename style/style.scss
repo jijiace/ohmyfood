@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&family=Shrikhand&display=swap');
+*{box-sizing: border-box;}
 
 body {
     margin: 0;
+    
 }
 
 .maincontainer {
@@ -37,6 +39,10 @@ header .cit {
     flex-direction: column;
     width: 100%;
     margin-top: 14px;
+    
+    i{
+        margin-right: 15px;
+    }
 
     img {
         width: 200px;
@@ -47,6 +53,7 @@ header .cit {
         background-color: #EAEAEA;
         width: 100%;
         padding: 15px 0;
+        margin: 15px 0 0;
     }
 }
 
@@ -55,6 +62,9 @@ header .cit {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    background-color: #F6F6F6;
+    padding: 15px 0  57px;
+    
 
     p {
         font-family: 'Roboto', sans-serif;
@@ -73,18 +83,43 @@ header .cit {
     text-align: center;
     color: white;
     margin: auto;
+    
+    &:hover{
+        transform: scale(1.02);
+        transition: transform 2000ms;
+    }
+}
+
+
+.fonction{
+    padding: 50px 10px;
 }
 .compo{
+    display: flex;
     font-family:'Roboto', sans-serif;
     list-style-type: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0;
+    
     li {
+    
+        text-align: center;
+        
         position: relative;
         border-radius: 20px;
         background: #F6F6F6;
-        height: 73px;
+        padding: 28px 0;
         width: 90%;
         margin: auto;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        i{
+            margin-right: 25px;
+            width: 20px;
+        }
+        &:hover i {
+            color: #9356DC;
+        }
         span{
             border-radius: 100%;
             background-color: #9356DC;
@@ -104,11 +139,143 @@ header .cit {
 }
 .Card { 
     background-color: #F6F6F6;
+    padding: 54px 17px 66px;
+
+    article {
+        padding-top: 20px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
     img {
-        border-radius: 15px;
-        height: 251px;
+        border-radius: 15px 15px 0 0;
+        height: 174px;
         object-fit: cover;
-        text-align: center;
+        text-align: center; 
+    }
+    .pals{
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 25px 0 13px;
+        border-radius:  0 0 15px 15px;
+        i{
+            font-size: 20px;
+        }
+
+       .pals-text {
+        color: black;
+        text-decoration: none;
+        font-family:'Roboto', sans-serif;
+        padding: 10px 0;
+
+        h3{
+            line-height: 0;
+        }
+        }
     }
 }
+.foot{
+    width: 100%;
+    padding: 22px 25px;
+    background:  #353535;
+   .foot-list{
+    gap: 0;
+   }
+    img{ width: 110px;
+    
+  
 
+   }
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px 0;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+    li {
+        i{
+            margin-right: 10px;
+        }
+        a{
+            text-decoration: none; /* Enlève le soulignement par défaut */
+            color: white;
+            font-weight: 500;
+        }
+    }
+   
+  }
+  
+}
+@media  (min-width: 1024px) {
+    /* Styles spécifiques au bureau vont ici */
+    .fonction{
+        
+        max-width: 1280px;
+        margin: auto;
+        
+         h2{
+            margin-top: 0;
+         }
+         .compo{
+            flex-direction: row;
+            margin: 0;
+            padding-left: 4px;
+         }
+        
+    }
+    .Card{
+        width: 100%;
+        > div{
+            max-width: 1280px;
+            margin: auto;
+            position: relative;
+
+        }
+        
+       .card2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+       }
+    }
+    .foot{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+        .foot-list{
+            order: 1;
+            flex-direction: row;
+            gap: 1.5rem;
+            padding-top: 15px;
+        }
+        .myfoo{
+            display: flex;
+            order: 2;
+            justify-content: flex-end;
+            align-items: center;
+            padding-left: 120px;
+            padding-right: 30px;
+            padding-top: 10px;
+
+        }
+    }
+  }
+  @media (max-width: 1024px) {
+    .foot {
+        .foot-list{
+            gap: 2rem;
+        }
+
+    }
+    
+  }
+    
