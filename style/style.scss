@@ -15,7 +15,7 @@ body {
     width: 100%;
 }
 
-.maincontainer h1, .maincontainer p, .maincontainer h2 {
+.maincontainer  .maincontainer p, .maincontainer h2 {
     font-family: 'Roboto', sans-serif;
 } 
 .page{
@@ -30,30 +30,30 @@ header {
     flex-direction: column;
     width: 100%;
 }
+h1{
+    font-family:'Shrikhand', serif;
+}
+
+.hed
+{
+    img{width: 100%;
+        height: 275px;
+        padding-top: 10px;
+        object-fit: cover;
+    
+
+    };
+    
+}
+    
+        
+
 
 header .cit {
     display: flex;
 }
-//header  page 1 //
-.head1{
-    img:first-of-type{
-        width: 150px;
-        padding-top: 10px;
-    }
-    img:nth-of-type(2){
-        width: 100%;
-        height: 275px;
-        padding-top: 10px;
-    }
-    i {
-        position: absolute;
-        left: 40px;
-        font-size: 22px;
-        color: black;
-        padding-top: 10px;
-        left: 20px;
-    }
-}
+
+
 //header page 2//
 .head2{
     img:first-of-type{
@@ -63,64 +63,27 @@ header .cit {
     img:nth-of-type(2){
         width: 100%;
         height: 275px;
-        padding-top: 10px;
+        padding-top: 20px;
         object-fit: cover;
+    
     }
     i {
         position: absolute;
         left: 40px;
-        font-size: 25px;
+        font-size: 20px;
         color: black;
         top: 5px;
     padding-top: 5px;
     }
 }
-//header page3 //
-.head3{
-    img:first-of-type{
-        width: 150px;
-        padding-top: 10px;
-    }
-    img:nth-of-type(2){
-        width: 100%;
-        height: 275px;
-        padding-top: 10px;
-        object-fit: cover;
-    }
-    i {
-        position: absolute;
-        left: 40px;
-        font-size: 25px;
-        color: black;
-        top: 5px;
-    padding-top: 5px;
-    }
-}
-//header page 4 //
-.head4{
-    img:first-of-type{
-        width: 150px;
-        padding-top: 10px;
-    }
-    img:nth-of-type(2){
-        width: 100%;
-        height: 275px;
-        padding-top: 10px;
-        object-fit: cover;
-    }
-    i {
-        position: absolute;
-        left: 40px;
-        font-size: 25px;
-        color: black;
-        top: 5px;
-    padding-top: 5px;
-    }
+
+    
     //fin du header global//
     
-}
+
 .title2{
     margin-bottom: 3px;
+
 }
 hr{
     border-color:   rgba(47, 255, 64, 0.774);
@@ -225,6 +188,10 @@ hr{
         font-size: 22px;
     }
 }
+.title2{
+    width: 90%;
+    margin: auto;
+}
 .button{
     display: flex;
     justify-content: center;
@@ -244,12 +211,18 @@ hr{
     text-align: center;
     color: white;
     margin: auto;
-    
+    transition: transform 200ms;
     &:hover{
-        transform: scale(1.02);
-        transition: transform 2000ms;
+        transform: scale(1.15);
+        
     }
 }
+
+.icon-link:hover,.icon-link:active {
+  color: purple; 
+}
+
+
 
 
 .fonction{
@@ -343,9 +316,7 @@ hr{
     width: 100%;
     padding: 22px 25px;
     background:  #353535;
-   .foot-list{
-   
-   }
+  
     img{ width: 110px;
     
   
@@ -376,7 +347,27 @@ hr{
   
 }
 @media  (min-width: 1024px) {
-    /* Styles spécifiques au bureau vont ici */
+    /* Styles spécifiques au bureau vont ici */ 
+    
+        .head2 img:nth-of-type(2){
+        height: 450px;
+    }
+    
+    
+    .palette{
+        justify-content: center;
+        gap: 15px;
+        padding-top: 15px;
+    }
+    .page{
+        width: 50%;
+        margin: auto;
+    }
+    
+  
+    hr{
+        width: 5%;
+    }
     .fonction{
         
         max-width: 1280px;
@@ -392,6 +383,15 @@ hr{
          }
         
     }
+    .title2{
+        width: 70%;
+        margin: auto;
+    }
+    .carte article{
+        width: 70%;
+    }
+        
+    
     .Card{
         width: 100%;
         > div{
@@ -431,4 +431,4 @@ hr{
     }
   }
  
-    
+ 
