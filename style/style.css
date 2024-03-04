@@ -140,18 +140,56 @@ hr {
   opacity: 0;
   animation-fill-mode: forwards;
 }
+.carte .desserts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.carte .desserts article {
+  animation-delay: 3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
 .carte article {
   display: flex;
   border-radius: 15px;
   margin: auto;
   width: 90%;
+  height: 77px;
   animation: appear 2s;
+  overflow: hidden;
   background: rgba(255, 255, 255, 0.932);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   align-items: center;
 }
+.carte article:hover .check {
+  margin-right: 0;
+}
 .carte article .card3 {
   padding: 15px 0;
+  flex: 1;
+  overflow: hidden;
+}
+.carte article .check {
+  display: flex;
+  background-color: #99E2D0;
+  height: 100%;
+  width: 60px;
+  border-radius: 0 15px 15px 0;
+  justify-content: center;
+  align-items: center;
+  margin-right: -60px;
+  transition: all 0.5s;
+}
+.carte article .check i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: white;
+  color: #99E2D0;
 }
 .carte article h3 {
   margin-top: 0;
@@ -164,8 +202,11 @@ hr {
   margin-left: 20px;
 }
 .carte article span {
-  margin-left: auto;
-  margin-right: 10px;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  font-weight: bold;
+  padding-bottom: 15px;
 }
 
 .palette {
@@ -178,7 +219,27 @@ hr {
   position: relative;
 }
 .palette i {
+  position: absolute;
   font-size: 30px;
+  right: 40px;
+}
+.palette .fa-solid {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.palette:hover .fa-solid {
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  opacity: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.palette h1 {
+  left: -55px;
+  position: relative;
 }
 
 .logo {
@@ -361,6 +422,7 @@ hr {
   height: 2rem;
   width: 5rem;
   background-color: #99E2D0;
+  color: #1b6150;
   display: grid;
   place-items: center;
   right: 1rem;
@@ -404,6 +466,9 @@ hr {
     gap: 15px;
     padding-top: 15px;
   }
+  .palette i {
+    left: 43.75rem;
+  }
   .page {
     width: 50%;
     margin: auto;
@@ -444,7 +509,7 @@ hr {
     gap: 4rem;
   }
   .new::before {
-    top: -8.5vmax;
+    top: -10rem;
   }
   .foot {
     display: flex;
