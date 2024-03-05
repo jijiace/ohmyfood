@@ -18,7 +18,11 @@ body {
 
 .maincontainer  .maincontainer p, .maincontainer h2 {
     font-family: 'Roboto', sans-serif;
+    
 } 
+fa-heart {
+    border-width: 10px;
+}
 .page{
     background: #F6F6F6;
 }
@@ -229,6 +233,9 @@ hr{
         margin-bottom: 0;
         margin-top: 0;
         margin-left: 20px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
        }
        span{
         
@@ -318,6 +325,9 @@ hr{
 .title2{
     width: 90%;
     margin: auto;
+    h2{
+        margin: 0;
+    }
 }
 .button{
     display: flex;
@@ -328,6 +338,10 @@ hr{
 
 
 .btnres {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 218px;
     height: 50px;
     border-radius: 25px;
@@ -523,7 +537,7 @@ top:-18.5vmax;
         gap: 15px;
         padding-top: 15px;
         i{
-            left: 43.75rem;
+            left: 40.75rem;
         }
     }
     .page{
@@ -603,5 +617,8 @@ top:-18.5vmax;
         }
     }
   }
- 
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Styles spécifiques pour les tablettes */
+
+}
  
