@@ -258,9 +258,9 @@ hr{
     background: #F6F6F6;
     position: relative;
     i{
-        position: absolute;
+        
         font-size: 30px;
-        right: +40px
+        
     }
     .fa-solid{
         opacity: 0;
@@ -277,8 +277,8 @@ hr{
         -webkit-text-fill-color: transparent;
     }
 }
-.palette h1 {
-    left: -55px;
+.heart3 {
+    
     position: relative;
 }
 
@@ -355,7 +355,9 @@ hr{
     margin: auto;
     transition: transform 200ms;
     &:hover{
-        transform: scale(1.15);
+       
+        background: linear-gradient(180deg, #ff99e2 0%, #dc7bff 100%);
+box-shadow: 1px 11px 14px 0px rgba(109, 109, 109, 0.699);
         
     }
 }
@@ -537,9 +539,7 @@ top:-18.5vmax;
         justify-content: center;
         gap: 15px;
         padding-top: 15px;
-        i{
-            left: +47.75rem;
-        }
+      
     }
     .page{
         width: 50%;
